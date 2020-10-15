@@ -1,0 +1,92 @@
+* {
+	box-sizing: border-box;
+}
+
+h1 {
+	font-family: Arial, Helvetica,sans-serif;
+	color:darkorange;
+	text-align: center;
+	margin: 20px; 
+	font-size: 175%;
+}
+.section1,.section2,.section3{	
+	height:155px;
+	padding-left:15px;
+	padding-right:15px;
+	padding-top: 20px;
+	position: relative;	
+}
+
+.frame1,.frame2,.frame3 {
+	border: 1px solid black;
+	height: 135px;
+	background-color: darkorange;
+	overflow: hidden;
+	position: relative;
+}
+.text1,.text2,.text3 {
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	color:black;
+	float:right;
+	padding: 0 15px 15px 15px;
+	font-size: .75em;
+}
+.title1,.title2,.title3 {
+	margin:0;
+	font-family: Arial, Helvetica,sans-serif;
+	color: white;
+	border: 1px solid black;
+	float: right;
+	padding:2px 20px 2px 20px;
+	width: 100px;
+	font-size: 100%;
+	text-align: center;
+}
+.title1 {
+	background-color: darkred;
+	}
+.title2 {
+	background-color: purple;
+	}
+.title3 {
+	background-color: darkgreen;
+	}
+.row {
+  	width: 100%;
+}
+
+/********** Large devices only **********/
+@media (min-width:992px) {
+.section1, .section2, .section3 {
+    float: left;
+  }
+
+.section1 {
+    width: 33%;
+  }
+.section2 {
+    width: 33%;
+  }
+.section3 {
+    width: 33%;
+  }
+}
+
+/********** Medium devices only **********/
+@media (min-width:768px) and (max-width:991px) {
+.section1,.section2 {		
+	width: 50%;
+	float:left;
+	}
+.section3 {		
+	width: 100%;
+	float:left;
+	}
+}
+/********** short devices only **********/	
+@media (max-width:767px) {
+.section1,.section2,.section3 {
+	width: 100%;
+	float:left;	
+	}
+}
